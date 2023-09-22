@@ -8,9 +8,7 @@ Several years ago the idea of using a constant $\tau$, equal to twice the value 
 
 Recently, I watched [this video](https://youtu.be/tD5NrevFtbU?si=-HuQcc4XvUntE6TB) about code performance. Mostly, the video is irrelevant to the field of mathematics, other than triggering a thought process in my own mind. In the video, several shapes area created as a generic object with a type attribute(`SQUARE`, `RECTANGLE`, `TRIANGLE`, and `CIRCLE`), each shape must have a type and a `width`, but an optional `height` attribute was also available. What was of mathematical interest to me was that the area of a `SQUARE` was implemented as 
 
-$$
-area = width \cdot width
-$$ 
+$$ area = width \cdot width $$ 
 
 as one would expect. Similarly for the areas of `TRIANGLE` and `RECTANGLE`. However, the area of a circle was implemented as 
 
