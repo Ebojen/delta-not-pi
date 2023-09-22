@@ -99,3 +99,29 @@ P_{circle} = \delta \cdot 4 w = \delta \cdot P_{square}
 \end{align}
 $$
 
+In particular, the perimeter of a circle with diameter 1 is just $4\delta$.
+
+## We're Going 3D
+
+Let's take a moment to see how $\delta$ impacts our values for spheres.
+
+For the remainder of this section, we will work with a circle of radius $r$ and diameter $w=2r$ as well as cube of side length $w$. Additionally, recall the relationship $\pi=4\delta$.
+
+The volume of the cube follows the traditional formula $V_{cube}=w^3$.
+
+The volume of the sphere is
+
+$$ V_{sphere} = \frac{4}{3}\pi r^3 = \frac{2\delta}{3}w^3 = \frac{2\delta}{3} V_{cube} $$
+
+Let's see what happens with surface area before we hit much discussion.
+
+The surface area of a square is given by $S_{square}=6w^2$.
+
+For a sphere we have 
+
+$$ S_{sphere}=4\pi r^2 = 4\delta w^2 $$
+Now, to jump a bit to the conclusion, the volume relationship suggests that in three dimensions the "sphere constant" should be $\frac{2\delta}{3}$. A little algebra gives us
+
+$$ S_{sphere} = \frac{2\delta}{3} 6w^2 = \frac{2\delta}{3}S_{cube} $$
+
+More to come...
