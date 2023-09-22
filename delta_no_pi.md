@@ -26,15 +26,36 @@ For the remainder of this discussion, let's use $\delta$ to denote the value $\f
 
 # First Arguments for $\delta$
 
-So why might $\delta$ have some value in understanding the world that $\pi$(and consequently $\tau$) does not? Let's start with basic definitions. 
+So why might $\delta$ have some value in understanding the world that $\pi$(and consequently $\tau$) does not? Let's start with basic definitions.
 
-$\pi$ is defined as the ratio of the circumference of a circle to its diameter.
+A circle is the set of all points a fixed distance from a central point. In other words, a circle is defined by its center and radius.
+
+$\pi$ is the ratio of the circumference of a circle to its diameter. And $\tau$ is the ratio of the circumference of a circle to its radius.
+
+I have a couple of issues with these definitions.
+
+1. They require us to measure the circumference of a circle, which we know is impossible empirically, because we know both values are irrational. The definition of $\tau$ is particularly problematic in this regard because given a circle we have to measure both the circumference and the radius, neither of which are easy to measure.
+2. Both definitions are in terms of the circle. While this may seem mathematically pure, it leaves us with values that provide no insight into the nature of a circle other than that there is a "circle constant." In this regard, we can even concede that $\tau$ is the more "pure" of definitions because it goes back a defining property of the circle, its radius.
+3. Both of these definitions define the "circle constant" in terms of lengths. But a circle is a two dimensional shape and it feels that a definitional constant for a two dimensional shape should have two dimensional meaning.
+
+Of these issues, I don't have any good answers for trying to measure a circle. At some point a shape does have to be measured by its characteristics and circles are just hard in this regard. See the existence of these "circle constants". If you've read this and said, but area is even harder to measure, I agree, but keep reading. Obviously, we've already seen that $\delta$ satisfies the second issue by teaching us how circles are related to their circumscribing squares, which also satisfies the third point. But if you stick with me, we'll see that there is something truly innate about $\delta$ that makes it universal while $\pi$ and $\tau$ are not.
 
 What about $\delta$? Based on what we've discussed thus far, $\delta$ is the ratio of the area of a circle to the area of its circumscribing square.
 
-Neither of these definitions truly please me because getting true values for the area or circumference of a circle seems quite difficult. In fact, one could argue that the definition of $\pi$ is more practical since length is easier to measure than area. But we will see that there is a certain inherent relationship between a circle and its circumscribing square that gives delta an almost equivalent definition to $\pi$ and that that definition is infact more meaningful. 
+We can summarize that relationship as
 
-When we look at the traditional formula for the area of a circle, $A=\pi\cdot r^2$, we are left with the magic constant $\pi$ as something that we just have to memorize. On the other hand, the formula $A=\delta\cdot width^2$ actually makes sense because delta is the fraction of the area that the circle occupies inside the square with sides equal to the diameter of the circle. You could argue this is a tautology so let's investigate further. What about perimeter/circumference?
+$$ A_{circle}=\delta \cdot A_{square} $$
+
+when the square has the same width (i.e. diameter) of the circle.
+
+This gives us a definition of $\delta$ that
+
+1. Tells us about a circle in terms of the shape we measure all other two dimensional shapes by, the square. It makes us more knowlegable about circles and their relationship to the rest of the two dimensional world.
+2. Tells us about a circle in terms of its two dimensionalness, its area.
+
+This is all well and good, but quite honestly makes the first problem of measurement even worse. So is there an easier way to measure delta?
+
+$\tau$ and $\delta$ solve this problem by falling back to measurements of length, so let's see what happens with $\delta$ when we explore perimeter(i.e. circumference)?
 
 The circumference of a circle is traditionally given by 
 
@@ -48,13 +69,13 @@ So what? Let's rearrange that further and look deeper.
 
 $$ C=\delta\cdot (4\cdot width) $$ 
 
-Of particular interest is the term $4\cdot width$. This is the perimeter for the circumscribing square! Again, we can understand the similar concept for a circle in terms of a fraction of the formula for the circumscribing square. And not only is the relationship parallel, but it is in fact the same relationship! A circle is a fixed fraction of its circumscribing square. It becomes clear that a powerful way to conceptualize a circle is as a fraction of its circumscribing square.
+Of particular interest is the quantitity $4\cdot width$. This is the perimeter for the circumscribing square! Again, we can understand the similar concept for a circle in terms of a fraction of the formula for the circumscribing square. And not only is the relationship parallel, but it is in fact the same relationship! A circle is a fixed fraction of its circumscribing square. It becomes clear that a powerful way to conceptualize a circle is as a fraction of its circumscribing square.
 
 To summarize, given a circle of diameter $w$ and a square with sides of length $w$, we have the following relationships.
 
 ### Definitional Values
 
-$$ \delta = \frac{\pi}{4} \approx 0.7854 $$
+$$ \delta = \frac{\pi}{4} = \frac{\tau}{8} \approx 0.7854 $$
 
 
 ### Area
@@ -77,3 +98,4 @@ P_{square} = 4 w \\
 P_{circle} = \delta \cdot 4 w = \delta \cdot P_{square}
 \end{align}
 $$
+
