@@ -14,7 +14,7 @@ as one would expect. Similarly for the areas of `TRIANGLE` and `RECTANGLE`. Howe
 
 $$ area = \pi \cdot width \cdot width $$
 
-It was this later implementation that caught my attention. In all the shapes except `CIRCLE`, the width represented the maximum distance between some set of points on the shape, but for `CIRLCE`, `width` for some reason did not represent the distance between two points on the shape itself. Using the same attribute to represent two totally different concepts is considered a poor practice in programming, so in my own explorations of the subject, I reimplemented the area of circle based on the diameter, which yielded 
+It was this later implementation that caught my attention. In all the shapes except `CIRCLE`, the width represented the maximum distance between some pair of points on the shape, but for `CIRLCE`, `width` for some reason did not represent the distance between two points on the shape itself. Using the same attribute to represent two totally different concepts is considered a poor practice in programming, so in my own explorations of the subject, I reimplemented the area of circle based on the diameter, which yielded 
 
 $$ area = \pi \cdot \frac{width}{2} \cdot \frac{width}{2} $$ 
 
@@ -124,4 +124,18 @@ Now, to jump a bit to the conclusion, the volume relationship suggests that in t
 
 $$ S_{sphere} = \frac{2\delta}{3} 6w^2 = \frac{2\delta}{3}S_{cube} $$
 
-More to come...
+In other words, $\delta$ defines a constant relationship not only between circles and equally wide squares but spheres and equally sized cubes.
+
+In fact, we can find a similar relationship for any higher dimensional n-sphere and n-cube of equal widths.
+
+$$ V_{n-sphere}=\frac{\delta^\frac{n}{2}}{\Gamma(\frac{n}{2} +1)} V_{n-cube} $$
+
+and then
+
+$$ S_{n-sphere}=\frac{\delta^\frac{n}{2}}{\Gamma(\frac{n}{2} +1)} S_{n-cube} $$
+
+Where $\Gamma$ is the gamma function, which can be thought of as an extension of factorial to all positive real numbers. Of particular note is that the use of delta actually makes the formulas for n-spheres cleaner, removing several seemingly arbitrary factors that appear when using $\pi$.
+
+Additionally we see that the use of $\delta$ in no way obscures any other formulas that involve $\pi$:
+
+* Area of an ellipse with width $a$ and height $b$: $A=\delta ab$
